@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://underscorejs.org/underscore-min.js"> </script>
+
+<body>
+    <div id="container">
+        <h2>BusTicketApp</h2>
+
+
+        <body style="background-color:pink;">
+            <br />
+            <form onsubmit="displayData()">
+                
+
+                Enter Source  :
+                <select name="src" id="src">
+                    <option> -Select Source- </option>
+                    <option value="CMBT">CMBT</option>
+                    <option value="CHENNAI">CHENNAI</option>
+                    <option value="TBM">TBM</option>
+                </select>
+
+                <br>
+
+                Enter Destination:
+                <select name="des" id="des">
+                    <option> -Select Destination- </option>
+                </select>
+
+                <br>
+
+                <!-- <input type="date" name="date" id="date"> -->
+
+
+                <button type="submit">Search</button>
+                <br /> 
+            </form>
+            <table border="1" class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>S.NO</th>
+                        <th>BusNo</th>
+                        <th>BusName</th>
+                        <th>Amount</th>
+                        <th>Class</th>
+                        <th>TotalSeats</th>
+                        <th>AvailableSeats</th>
+                        <th>Timing</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="busTbl">
+                </tbody>
+            </table>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="searchBus.js"></script>
+</body>
+
+</html>
+
+
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+        <style>
+
+            body nav div h2 a.heading{
+                color: aliceblue;
+            }
+    
+        </style>
+
+
+
+        </head>
+
+<body>
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <div class="nav navbar-nav">
+            <h2><a class="heading">Registration</a></h2>
+        </div>
+    </nav>
+       
+    </div>
+</nav>
+
+    <div id="container">
+        
+      <center>  
+        <br>
+        <br>
+        <form onsubmit="addUser()">
+            <table>
+            
+            <tr>   
+         <td> Enter User Name:</td><td><input type="text" name=userName id="userName" placeholder="Enter userName"pattern="[A-Za-z]{3,}" title="Enter atleast 3 letters" required /></td>
+            </tr>
+
+            <tr>
+           <td> Set Password:</td><td><input type="password" name="password" id="password" placeholder="Enter password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Atleat 8 characters with atleast 1 uppercase and atleast 1 lowercase letters and atleast 1 number"required /></td>
+            </tr>
+
+            <tr>
+           <td> Enter Gender:</td><td><input type="radio" name="gender" id="gender" value="M" required>male <input type="radio" name="gender" id="gender" value="F" >female <input type="radio" name="gender" id="gender" value="Others">others</td>
+            </tr>
+        
+           <tr>
+            <td>Enter DOB:</td><td><input type="date" name="dob" id="dob" placeholder="Enter dob" placeholder="yyyy-mm-dd" min="1900-01-01" max="2020-03-30"required /></td>
+            </tr>
+
+            <tr>
+           <td> Enter contact number:</td><td><input type="tel" name="contactNumber" id="contactNumber" placeholder="Enter contact number" pattern="[6-9]{1}[0-9]{9}" title="contact number must be 10 digits and should start with 6 or above"required /></td>
+            </tr>
+        
+            <tr>
+           <td> Enter EmailId:</td><td><input type="text" name="mailId" id="mailId" placeholder="Enter EmailId" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" title="Example:xyz@gmail.com"  "/></td>
+                
+            </tr>
+        </table><br>
+            <button type="submit"class="btn btn-success">Register</button>
+            
+        </form>
+    
+    </div>   
+</center>
+</body>
+<script src="register.js"></script>
+</html>
